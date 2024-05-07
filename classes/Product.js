@@ -1,9 +1,11 @@
 class Product {
-    constructor(name, price, description) {
+    constructor(name, price, description, rewardPoints, quantity) {
         this.name = name;
         this.price = price;
         this.description = description;
-        this.inStock = true;
+        this.inStock = quantity > 0;
+        this.rewardPoints = rewardPoints;
+        this.quantity = quantity;
     }
 
     display() {
