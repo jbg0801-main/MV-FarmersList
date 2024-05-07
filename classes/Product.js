@@ -3,9 +3,9 @@ class Product {
         this.name = name;
         this.price = price;
         this.description = description;
-        this.inStock = quantity > 0;
         this.rewardPoints = rewardPoints;
         this.quantity = quantity;
+        this.inStock = quantity > 0;
     }
 
     display() {
